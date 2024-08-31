@@ -37,6 +37,8 @@ body{
     padding: 2vw 6vw;
 }
 
+
+
 .sec1_left h1{
     color:rgb(32, 194, 174);
 }
@@ -68,10 +70,11 @@ body{
 ul a,i{
     text-decoration: none;
     color:rgb(32, 194, 174); 
+    font-size: 15px;
 }
 
 
-.section2{
+.section2, .section3{
     padding: 6vw;
     display: flex;
     justify-content: space-between;
@@ -84,11 +87,12 @@ ul a,i{
     gap:1vw;
     width: 60vw;
 }
-.sec2_left h4, h1 span{
+
+.sec2_left h4, h1 span , .sec3_left h4{
     color:rgb(32, 194, 174);
 }
 
-.sec2_left h1{
+.sec2_left h1, .sec3_left h1{
     color: white;
     font-size: 70px;
 }
@@ -99,22 +103,42 @@ ul a,i{
     width:100PX
 }
 
-.sec2_left p{
+.sec2_left p, .sec3_left p{
     color:white;
 }
 
 .section2 .img{
     height:300px;
     border-radius: 10px;
-box-shadow: 15px 15px 30px rgb(32, 194, 174);;
+box-shadow: 15px 15px 30px rgb(32, 194, 174);
     width: 200px;
     background-image: url("assets/images/home_img.png");
     background-repeat: no-repeat;
 }
 
+.sec3_left{
+    display: flex;
+    flex-direction: column;
+    gap:1vw;
+    width: 50vw;
+}
+
+.section3 .sec3_left button{
+    width:90px;
+    height: 30px;
+    font-size: 17px;
+    padding: 4px;
+    background-color:rgb(32, 194, 174); 
+    border-style: none;
+    border-radius: 10px;
+}
+
 @media (min-width:1100px) {
     .section2{
-        padding: 8vw;
+        padding: 5vw 8vw;
+    }
+    .sec2_left{
+        width: 50vw;
     }
 }
 
