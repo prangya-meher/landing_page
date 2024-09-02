@@ -9,8 +9,10 @@
     
 }
 
+
 body{
-    background-color:black;
+    /* background-color:black; */
+    background: linear-gradient(rgb(59, 59, 59), rgb(44, 44, 44),rgb(63, 62, 62));
     position: relative;
     height: 100%;
     width: 100%;
@@ -74,7 +76,7 @@ ul a,i{
 }
 
 
-.section2, .section3{
+.section2, .section3, .section4{
     padding: 6vw;
     display: flex;
     justify-content: space-between;
@@ -88,11 +90,12 @@ ul a,i{
     width: 60vw;
 }
 
-.sec2_left h4, h1 span , .sec3_left h4{
+
+.sec2_left h4, h1 span , .sec3_left h4, .sec4_right h4{
     color:rgb(32, 194, 174);
 }
 
-.sec2_left h1, .sec3_left h1{
+.sec2_left h1, .sec3_left h1, .sec4_right h1{
     color: white;
     font-size: 70px;
 }
@@ -103,24 +106,77 @@ ul a,i{
     width:100PX
 }
 
-.sec2_left p, .sec3_left p{
+.sec2_left p, .sec3_left p, .sec4_right p{
     color:white;
 }
 
-.section2 .img{
-    height:300px;
+.sec2_right .img{
+    height:280px;
     border-radius: 10px;
-box-shadow: 15px 15px 30px rgb(32, 194, 174);
+    box-shadow: 15px 15px 30px rgb(32, 194, 174);
     width: 200px;
-    background-image: url("assets/images/home_img.png");
-    background-repeat: no-repeat;
+    overflow: hidden
 }
 
-.sec3_left{
+.sec2_right .img img{
+    height: 300px;
+    width: 200px;
+}
+
+.sec3_left, .sec4_right{
     display: flex;
     flex-direction: column;
     gap:1vw;
     width: 50vw;
+}
+.sec3_right{
+    display: flex;
+    gap: 2vw;
+    margin-right: 2vw;
+}
+.icon_box1, .icon_box2{
+    display: flex;
+    flex-direction: column;
+    gap:2vw;
+    color: white;
+}
+.icon_box2{
+    margin-top: 2vw;
+}
+
+.icons{
+    height:180px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(56, 55, 55);
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items:center;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+ .box{
+    height: 70%;
+    width: 100%;
+    background:linear-gradient(transparent,rgb(151, 205, 198));
+    position: absolute;
+    bottom: 0px;
+}
+.icons i{
+    font-size: 50px;
+}
+
+.icons p{
+    width: 170px;
+    font-size: 13px;
+    text-align: center;
+}
+.icons h2{
+    font-size: 18px;
+    text-align: center;
 }
 
 .section3 .sec3_left button{
@@ -133,12 +189,28 @@ box-shadow: 15px 15px 30px rgb(32, 194, 174);
     border-radius: 10px;
 }
 
+.sec4_img{
+    height: 400px;
+    width: 400px;
+}
+
+.sec4_img img{
+    height: 400px;
+    width: 400px;
+    object-fit: contain;
+    filter: blur(3px);
+}
+
 @media (min-width:1100px) {
     .section2{
         padding: 5vw 8vw;
     }
     .sec2_left{
         width: 50vw;
+    }
+
+    .sec3_left{
+        width: 40vw;
     }
 }
 

@@ -15,3 +15,5 @@ tl.from(".section1 .sec1_left,.section1 .sec1_right a,.section1 .sec1_right i",{
     y:-50,
     stagger:0.3
 })
+
+
