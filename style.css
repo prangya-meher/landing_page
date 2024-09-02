@@ -201,7 +201,7 @@ ul a,i{
     filter: blur(3px);
 }
 
-@media (min-width:1100px) {
+@media (min-width:1024px) {
     .section2{
         padding: 5vw 8vw;
     }
