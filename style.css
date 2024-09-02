@@ -287,8 +287,12 @@ ul a{
     .sec3_left{
         width: 40vw;
     }
+
+    .sec2_left h1, .sec3_left h1, .sec4_right h1{
+        font-size:80px;
+    }
     p{
-        font-size: 18px;
+        font-size: 25px;
     }
 
     ul a{
