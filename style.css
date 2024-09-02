@@ -12,7 +12,8 @@
 
 body{
     /* background-color:black; */
-    background: linear-gradient(rgb(59, 59, 59), rgb(44, 44, 44),rgb(63, 62, 62));
+    background: linear-gradient(rgb(30, 30, 30), rgb(68, 68, 68), rgb(30, 30, 30));
+    /* background: linear-gradient(rgb(35, 34, 34), rgb(81, 81, 81),rgb(35, 34, 34)); */
     position: relative;
     height: 100%;
     width: 100%;
@@ -69,10 +70,15 @@ body{
     align-items: center;
     gap:2vw;
    }
-ul a,i{
+ul a{
     text-decoration: none;
     color:rgb(32, 194, 174); 
     font-size: 15px;
+}
+
+.sec1_right i{
+    color:rgb(32, 194, 174); 
+    font-size: 20px;
 }
 
 
@@ -167,6 +173,7 @@ ul a,i{
 }
 .icons i{
     font-size: 50px;
+    color: rgb(32, 194, 174); ;
 }
 
 .icons p{
@@ -201,16 +208,91 @@ ul a,i{
     filter: blur(3px);
 }
 
+.sec4_right .down4{
+    display: flex;
+    margin-top: 2vw;
+}
+
+ .down4 .down_box{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+} 
+
+.down_box .down_icon{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.down_box p{
+    font-size: 15px;
+}
+
+.down_icon h3{
+    font-size: 25px;
+    color: white;
+}
+
+.down_icon i{
+    font-size: 70PX;
+    color:  rgb(32, 194, 174);;
+}
+
+.section5{
+    padding: 6vw;
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    align-items: center;
+    color: white;
+}
+
+.sec5_icons i{
+    font-size: 50px;
+    color:  rgb(32, 194, 174);;
+}
+.sec5_icons p{
+    font-size: 15px;
+}
+.sec5_icons .num{
+    font-size: 40px;
+    color: rgb(32, 194, 174);
+    margin-top: 1vw;
+}
+
+.section5 .sec5_icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self:center;
+    gap:8px;
+}
+
+
 @media (min-width:1024px) {
-    .section2{
-        padding: 5vw 8vw;
+    .section2, .section4{
+        padding: 5vw 9vw;
     }
+    
+    .sec1_left h1{
+        font-size: 35px;
+    }
+
+
     .sec2_left{
         width: 50vw;
     }
 
     .sec3_left{
         width: 40vw;
+    }
+    p{
+        font-size: 18px;
+    }
+
+    ul a{
+        font-size: 18px;
     }
 }
 
