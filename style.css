@@ -18,8 +18,6 @@ body{
     height: 100%;
     width: 100%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-
 }
 
 .back_text{
@@ -270,6 +268,77 @@ ul a{
 }
 
 
+@media (min-width:320px) and (max-width:600px) {
+
+    .back_text{
+        font-size:50vw;
+        position: absolute;
+        top:0;
+        left:25vw;
+    }
+
+    /* .all{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20vw;
+    } */
+    .section2, .section3{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap:8vw;
+        padding:15vw; 
+        padding-left:30vw;        
+    }
+    .section4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8vw;
+        padding:10vw;
+        padding-left:30vw;  
+    }
+
+    .down_icon i{
+        font-size: 50PX;
+    }
+    .down_icon h3{
+        font-size: 20PX;
+    }
+    .down_icon p{
+        font-size:13PX;
+    }
+
+    .sec2_left, .sec3_left, .sec4_right{
+        width: 100vw;
+    }
+    .sec2_left h1, .sec3_left h1, .sec4_right h1{
+        font-size:28px;
+    }
+    p{
+        font-size: 18px;
+    }
+
+    .section5{
+        padding: 10vw;
+        padding-left:17vw;
+    }
+    .sec5_icons i{
+        font-size:45px;
+    }
+    .sec5_icons p{
+        font-size: 15px;
+    }
+    .sec5_icons .num{
+        font-size:35px;
+    }
+    
+    
+}
 @media (min-width:1024px) {
     .section2, .section4{
         padding: 5vw 9vw;
@@ -292,7 +361,7 @@ ul a{
         font-size:80px;
     }
     p{
-        font-size: 25px;
+        font-size: 23px;
     }
 
     ul a{
