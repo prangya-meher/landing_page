@@ -421,7 +421,7 @@ ul a{
 }
 
 
-@media (min-width:1000px) and (max-width:1400px) {
+@media (min-width:999px) and (max-width:1600px) {
     .section2, .section4{
         padding: 5vw 9vw;
     }
@@ -432,7 +432,7 @@ ul a{
 
 
     .sec2_left{
-        width: 45vw;
+        width: 50vw;
     }
 
     .sec3_left{
