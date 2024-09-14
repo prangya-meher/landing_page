@@ -427,30 +427,33 @@ ul a{
     }
     
     .sec1_left h1{
-        font-size: 35px;
+        font-size: 38px;
     }
 
 
     .sec2_left{
-        width: 50vw;
+        width: 45vw;
     }
 
     .sec3_left{
-        width: 40vw;
+        width: 45vw;
     }
 
     .sec2_left h1, .sec3_left h1, .sec4_right h1{
         font-size:80px;
     }
     p{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     ul a{
-        font-size: 18px;
+        font-size: 20px;
     }
     .down4{
-        gap: 7vw;
+        gap:5vw;
+    }
+    .down_icon h3{
+        font-size: 28px;
     }
 }
 
