@@ -37,8 +37,8 @@ var closeBar=document.querySelector(".close-bar");
 mm1.add("(min-width:320px) and (max-width:750px)",()=>{
   
     tl1.to(".section1 .sidebar",{
-        // right:0,
-        x:"0%",
+        right:0,
+        // x:"0%",
         delay:0.5,
         duration:1,
   ease:"power2.out"
