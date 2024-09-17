@@ -3,7 +3,9 @@ var closeBar=document.querySelector(".close-bar");
 
 
 var mm1=gsap.matchMedia();
-
+var menuBar=document.querySelector(".menu-bar");
+var closeBar=document.querySelector(".close-bar"); 
+    var tl1=gsap.timeline();
 
 
 // tl.from(".back_text h1",{
@@ -14,26 +16,46 @@ var mm1=gsap.matchMedia();
 //     stagger:0.4
 // })
 
+// script.js
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const sidebar = document.querySelector('.sidebar');
+//     const toggleButton = document.getElementById('toggleSidebar');
+  
+//     let isSidebarOpen = false;
+  
+//     menuBar.addEventListener('click', function() {
+//       if (isSidebarOpen) {
+//         gsap.to(sidebar, { x: '100%', duration: 0.5, ease: 'power2.out' });
+//       } else {
+//         gsap.to(sidebar, { x: '0%', duration: 0.5, ease: 'power2.out' });
+//       }
+//       isSidebarOpen = !isSidebarOpen;
+//     });
+//   });
+  
 mm1.add("(min-width:320px) and (max-width:750px)",()=>{
-    var menuBar=document.querySelector(".menu-bar");
-var closeBar=document.querySelector(".close-bar");
-    var tl1=gsap.timeline();
+  
     tl1.to(".section1 .sidebar",{
-        right:0,
+        // right:0,
+        x:"0%",
         delay:0.5,
-        duration:1
+        duration:1,
+  ease:"power2.out"
     })
     
     tl1.from(".sidebar a",{
         opacity:0,
         x:150,
         duration:1,
-        stagger:0.5
+        stagger:0.5,
+        ease:"power2.out"
     })
     tl1.from(".sidebar .close-bar",{
         opacity:0,
         y:-100,
-        duration:1
+        duration:1,
+          ease:"power2.out"
     })
     
     tl1.pause();
@@ -45,9 +67,9 @@ var closeBar=document.querySelector(".close-bar");
     closeBar.addEventListener("click",()=>{
         tl1.reverse()
     })
+
+   
 })
-
-
 
 
 var tl=gsap.timeline();
