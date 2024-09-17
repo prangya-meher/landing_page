@@ -1,3 +1,7 @@
+
+
+
+
 var menuBar=document.querySelector(".menu-bar");
 var closeBar=document.querySelector(".close-bar");
 
@@ -33,8 +37,11 @@ var closeBar=document.querySelector(".close-bar");
 //       isSidebarOpen = !isSidebarOpen;
 //     });
 //   });
+
+
+
   
-mm1.add("(min-width:320px) and (max-width:750px)",()=>{
+mm1.add("(max-width:750px)",()=>{
   
     tl1.to(".section1 .sidebar",{
         right:0,
@@ -68,6 +75,33 @@ mm1.add("(min-width:320px) and (max-width:750px)",()=>{
         tl1.reverse()
     })
 
+
+    tl.from(".section3 .sec3_left",{
+        opacity:0,
+        x:-150,
+        duration:1.5,
+        scrollTrigger:{
+            trigger:".section3 .sec3_left",
+            scroller:"body",
+            // markers:true,
+        start:"top 80%",
+        end:"top 30%",
+        scrub:2
+        }
+    })
+    tl.from(".section3 .sec3_right",{
+        opacity:0,
+        x:150,
+        duration:1.5,
+        scrollTrigger:{
+            trigger:".section3 .sec3_right",
+            scroller:"body",
+            // markers:true,
+        start:"top 80%",
+        end:"top 30%",
+        scrub:2
+        }
+    })
    
 })
 
@@ -92,32 +126,7 @@ tl.from(".section2 .sec2_right",{
     x:100
 })
 
-tl.from(".section3 .sec3_left",{
-    opacity:0,
-    x:-150,
-    duration:1.5,
-    scrollTrigger:{
-        trigger:".section3 .sec3_left",
-        scroller:"body",
-        // markers:true,
-    start:"top 50%",
-    end:"top 30%",
-    scrub:2
-    }
-})
-tl.from(".section3 .sec3_right",{
-    opacity:0,
-    x:150,
-    duration:1.5,
-    scrollTrigger:{
-        trigger:".section3 .sec3_right",
-        scroller:"body",
-        // markers:true,
-    start:"top 45%",
-    end:"top 30%",
-    scrub:2
-    }
-})
+
 
 tl.from(".section4 .sec4_img",{
     opacity:0,
