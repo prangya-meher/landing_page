@@ -1,7 +1,9 @@
 var menuBar=document.querySelector(".menu-bar");
 var closeBar=document.querySelector(".close-bar")
 
-var tl1=gsap.timeline();
+
+var mm1=gsap.matchMedia();
+
 
 
 // tl.from(".back_text h1",{
@@ -12,33 +14,38 @@ var tl1=gsap.timeline();
 //     stagger:0.4
 // })
 
-tl1.to(".section1 .sidebar",{
-    right:0,
-    delay:0.5,
-    duration:1
-})
+// mm1.add("(min-width:320px)",()=>{
+//     var tl1=gsap.timeline();
+//     tl1.to(".section1 .sidebar",{
+//         right:0,
+//         delay:0.5,
+//         duration:1
+//     })
+    
+//     tl1.from(".sidebar a",{
+//         opacity:0,
+//         x:150,
+//         duration:1,
+//         stagger:0.5
+//     })
+//     tl1.from(".sidebar .close-bar",{
+//         opacity:0,
+//         y:-100,
+//         duration:1
+//     })
+    
+//     tl1.pause();
+    
+//     menuBar.addEventListener("click",()=>{
+//         tl1.play();
+//     })
+    
+//     closeBar.addEventListener("click",()=>{
+//         tl1.reverse()
+//     })
+// })
 
-tl1.from(".sidebar a",{
-    opacity:0,
-    x:150,
-    duration:1,
-    stagger:0.5
-})
-tl1.from(".sidebar .close-bar",{
-    opacity:0,
-    y:-100,
-    duration:1
-})
 
-tl1.pause();
-
-menuBar.addEventListener("click",()=>{
-    tl1.play();
-})
-
-closeBar.addEventListener("click",()=>{
-    tl1.reverse()
-})
 
 
 var tl=gsap.timeline();

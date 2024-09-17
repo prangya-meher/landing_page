@@ -11,13 +11,15 @@
 
 
 body{
+    scrollbar-width: 10px;
+    scroll-behavior: smooth;
     background: linear-gradient(rgb(30, 30, 30), rgb(68, 68, 68), rgb(30, 30, 30));
     overflow-x:hidden;
     height: 100%;
     width: 100%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.sidebar{
+/* .sidebar{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -32,7 +34,7 @@ body{
     z-index: 999;
     background-color: rgba(84, 77, 81, 0.2);
     padding: 15vw;
-    display: none;
+    /* display: none; */
 }
 .sidebar a{
     font-size: 18px;
@@ -51,9 +53,7 @@ body{
 .menu-bar{
     display: none;
     cursor: pointer;
-}
-
-
+} */
 
 .section1{
     padding: 2vw 6vw;
@@ -294,14 +294,15 @@ ul a{
 
 
 @media (min-width:320px) and (max-width:750px) {
-    .list-bar{
+    
+    /* .list-bar{
         display: none;
     }
 
     .menu-bar{
         display: block;
         color: rgb(32, 194, 174);
-    }
+    } */
 
     .sec1_right{
         margin-left: 4vw;
