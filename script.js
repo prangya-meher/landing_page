@@ -1,25 +1,5 @@
 
 
-
-
-var menuBar=document.querySelector(".menu-bar");
-var closeBar=document.querySelector(".close-bar");
-
-
-var mm1=gsap.matchMedia();
-var menuBar=document.querySelector(".menu-bar");
-var closeBar=document.querySelector(".close-bar"); 
-    var tl1=gsap.timeline();
-
-
-// tl.from(".back_text h1",{
-//     opacity:0,
-//     duration:1,
-//     delay:0.2,
-//     x:-100,
-//     stagger:0.4
-// })
-
 // script.js
 
 // document.addEventListener('DOMContentLoaded', function() {
@@ -103,12 +83,12 @@ tl.from(".section2 .sec2_right",{
 
 tl.from(".section3 .sec3_left",{
     opacity:0,
-    x:-150,
+    x:-100,
     duration:1.5,
     scrollTrigger:{
         trigger:".section3 .sec3_left",
         scroller:"body",
-        // markers:true,
+        markers:true,
     start:"top 80%",
     end:"top 30%",
     scrub:2
@@ -116,12 +96,12 @@ tl.from(".section3 .sec3_left",{
 })
 tl.from(".section3 .sec3_right",{
     opacity:0,
-    x:150,
+    x:100,
     duration:1.5,
     scrollTrigger:{
         trigger:".section3 .sec3_right",
         scroller:"body",
-        // markers:true,
+        markers:true,
     start:"top 80%",
     end:"top 30%",
     scrub:2
@@ -130,26 +110,26 @@ tl.from(".section3 .sec3_right",{
 
 tl.from(".section4 .sec4_img",{
     opacity:0,
-    x:-150,
+    x:-100,
     duration:1.5,
     scrollTrigger:{
         trigger:".section4 .sec4_img",
         scroller:"body",
-        // markers:true,
-    start:"top 50%",
+        markers:true,
+    start:"top 80%",
     end:"top 40%",
     scrub:2
     }
 })
 tl.from(".section4 .sec4_right",{
     opacity:0,
-    x:150,
+    x:100,
     duration:1.5,
     scrollTrigger:{
         trigger:".section4 .sec4_right",
         scroller:"body",
-        // markers:true,
-    start:"top 45%",
+        markers:true,
+    start:"top 70%",
     end:"top 40%",
     scrub:2
     }
@@ -163,8 +143,8 @@ tl.from(".section5 .sec5_icons",{
     scrollTrigger:{
         trigger:".section5 .sec5_icons",
         scroller:"body",
-        // markers:true,
-        start:"top 150%",
+        markers:true,
+        start:"top 170%",
         end:"top 90%",
         scrub:2
     }
