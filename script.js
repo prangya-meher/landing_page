@@ -41,69 +41,44 @@ var closeBar=document.querySelector(".close-bar");
 
 
   
-mm1.add("(max-width:750px)",()=>{
+// mm1.add("(max-width:750px)",()=>{
   
-    tl1.to(".section1 .sidebar",{
-        right:0,
-        // x:"0%",
-        delay:0.5,
-        duration:1,
-  ease:"power2.out"
-    })
+//     tl1.to(".section1 .sidebar",{
+//         right:0,
+//         // x:"0%",
+//         delay:0.5,
+//         duration:1,
+//   ease:"power2.out"
+//     })
     
-    tl1.from(".sidebar a",{
-        opacity:0,
-        x:150,
-        duration:1,
-        stagger:0.5,
-        ease:"power2.out"
-    })
-    tl1.from(".sidebar .close-bar",{
-        opacity:0,
-        y:-100,
-        duration:1,
-          ease:"power2.out"
-    })
+//     tl1.from(".sidebar a",{
+//         opacity:0,
+//         x:150,
+//         duration:1,
+//         stagger:0.5,
+//         ease:"power2.out"
+//     })
+//     tl1.from(".sidebar .close-bar",{
+//         opacity:0,
+//         y:-100,
+//         duration:1,
+//           ease:"power2.out"
+//     })
     
-    tl1.pause();
+//     tl1.pause();
     
-    menuBar.addEventListener("click",()=>{
-        tl1.play();
-    })
+//     menuBar.addEventListener("click",()=>{
+//         tl1.play();
+//     })
     
-    closeBar.addEventListener("click",()=>{
-        tl1.reverse()
-    })
+//     closeBar.addEventListener("click",()=>{
+//         tl1.reverse()
+//     })
 
 
-    tl.from(".section3 .sec3_left",{
-        opacity:0,
-        x:-150,
-        duration:1.5,
-        scrollTrigger:{
-            trigger:".section3 .sec3_left",
-            scroller:"body",
-            // markers:true,
-        start:"top 80%",
-        end:"top 30%",
-        scrub:2
-        }
-    })
-    tl.from(".section3 .sec3_right",{
-        opacity:0,
-        x:150,
-        duration:1.5,
-        scrollTrigger:{
-            trigger:".section3 .sec3_right",
-            scroller:"body",
-            // markers:true,
-        start:"top 80%",
-        end:"top 30%",
-        scrub:2
-        }
-    })
    
-})
+   
+// })
 
 
 var tl=gsap.timeline();
@@ -126,7 +101,32 @@ tl.from(".section2 .sec2_right",{
     x:100
 })
 
-
+tl.from(".section3 .sec3_left",{
+    opacity:0,
+    x:-150,
+    duration:1.5,
+    scrollTrigger:{
+        trigger:".section3 .sec3_left",
+        scroller:"body",
+        // markers:true,
+    start:"top 80%",
+    end:"top 30%",
+    scrub:2
+    }
+})
+tl.from(".section3 .sec3_right",{
+    opacity:0,
+    x:150,
+    duration:1.5,
+    scrollTrigger:{
+        trigger:".section3 .sec3_right",
+        scroller:"body",
+        // markers:true,
+    start:"top 80%",
+    end:"top 30%",
+    scrub:2
+    }
+})
 
 tl.from(".section4 .sec4_img",{
     opacity:0,

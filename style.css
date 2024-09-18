@@ -28,7 +28,7 @@ body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     overflow-x: hidden;
 } */
- .sidebar{
+ /* .sidebar{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -43,9 +43,9 @@ body {
     z-index: 999;
     background-color: rgba(84, 77, 81, 0.2);
     padding: 15vw;
-    /* transform: translateX(100%); 
-    transition: transform 0.3s ease; */
-    /* display: none; */
+    transform: translateX(100%); 
+    transition: transform 0.3s ease;
+    display: none;
  } 
 .sidebar a{
     font-size: 18px;
@@ -66,11 +66,9 @@ body {
 .menu-bar{
     display: none;
     cursor: pointer;
-} 
+}  */
 
-.section1{
-    padding:2vw 6vw;
-}
+
 
 .sec1_left h1{
     color:rgb(32, 194, 174);
@@ -85,6 +83,13 @@ body {
     display:flex;
     justify-content: space-between;
     align-items: center; 
+    background-color: rgba(113, 109, 109, 0.268);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    padding:1vw;
+    /* width: min-content; */
+    margin:2vw;
+    overflow: hidden;
 }
  
    .sec1_right{
@@ -310,14 +315,17 @@ body {
     /* .sidebar {
         right: 0; 
       } */
-    .list-bar{
-        display: none;
-    }
+
+      
+   .list-bar a{
+   font-size:10px;
+   }
 
     .menu-bar{
         display: block;
         color: rgb(32, 194, 174);
     }
+   
 
     .sec1_right{
         margin-left: 4vw;
@@ -445,7 +453,9 @@ body {
     .sec1_left h1{
         font-size: 38px;
     }
-
+    ul p{
+        font-size: 20px;
+    }
 
     .sec2_left{
         width: 50vw;
