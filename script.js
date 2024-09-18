@@ -88,7 +88,6 @@ tl.from(".section3 .sec3_left",{
     scrollTrigger:{
         trigger:".section3 .sec3_left",
         scroller:"body",
-        // markers:true,
     start:"top 80%",
     end:"top 30%",
     scrub:2
@@ -101,7 +100,6 @@ tl.from(".section3 .sec3_right",{
     scrollTrigger:{
         trigger:".section3 .sec3_right",
         scroller:"body",
-        // markers:true,
     start:"top 80%",
     end:"top 30%",
     scrub:2
@@ -115,7 +113,6 @@ tl.from(".section4 .sec4_img",{
     scrollTrigger:{
         trigger:".section4 .sec4_img",
         scroller:"body",
-        // markers:true,
     start:"top 80%",
     end:"top 40%",
     scrub:2
@@ -128,7 +125,6 @@ tl.from(".section4 .sec4_right",{
     scrollTrigger:{
         trigger:".section4 .sec4_right",
         scroller:"body",
-        // markers:true,
     start:"top 70%",
     end:"top 40%",
     scrub:2
@@ -143,7 +139,6 @@ tl.from(".section5 .sec5_icons",{
     scrollTrigger:{
         trigger:".section5 .sec5_icons",
         scroller:"body",
-        // markers:true,
         start:"top 170%",
         end:"top 90%",
         scrub:2
