@@ -1,7 +1,4 @@
 
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
-
-
 *{
     padding: 0;
     margin: 0;
@@ -53,10 +50,14 @@ body {
    }
 .list-bar a{
     text-decoration: none;
-    color:rgb(32, 194, 174); 
+    color:rgb(32, 194, 174);
     font-size: 15px;
 }
-
+.list-bar a:hover{
+    background-color:rgb(40, 42, 42);
+    padding: 8px;
+    border-radius: 30px;
+}
 .sec1_right i{
     color:rgb(32, 194, 174); 
     font-size: 20px;
